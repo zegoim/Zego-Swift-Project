@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3305740D21EECEA10026CCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305740C21EECEA10026CCB2 /* AppDelegate.swift */; };
+		3305740F21EECEA10026CCB2 /* ZegoAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305740E21EECEA10026CCB2 /* ZegoAnchorViewController.swift */; };
+		3305741221EECEA10026CCB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3305741021EECEA10026CCB2 /* Main.storyboard */; };
+		3305741421EECEA30026CCB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3305741321EECEA30026CCB2 /* Assets.xcassets */; };
+		3305741721EECEA30026CCB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3305741521EECEA30026CCB2 /* LaunchScreen.storyboard */; };
+		3305742221EECFEB0026CCB2 /* ZegoKeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305742121EECFEB0026CCB2 /* ZegoKeyCenter.swift */; };
+		3305742421EED8450026CCB2 /* ZegoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305742321EED8450026CCB2 /* ZegoHelper.swift */; };
+		3305742521EEE2140026CCB2 /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3305741F21EECF880026CCB2 /* ZegoLiveRoom.framework */; };
+		3305742621EEE2140026CCB2 /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3305741F21EECF880026CCB2 /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3305743021EF0EC10026CCB2 /* OCBridgeToCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3305742F21EF0EC10026CCB2 /* OCBridgeToCpp.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3305742721EEE2140026CCB2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3305742621EEE2140026CCB2 /* ZegoLiveRoom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3305740921EECEA10026CCB2 /* ZegoSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3305740C21EECEA10026CCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3305740E21EECEA10026CCB2 /* ZegoAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoAnchorViewController.swift; sourceTree = "<group>"; };
+		3305741121EECEA10026CCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3305741321EECEA30026CCB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3305741621EECEA30026CCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3305741821EECEA30026CCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3305741F21EECF880026CCB2 /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
+		3305742121EECFEB0026CCB2 /* ZegoKeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoKeyCenter.swift; sourceTree = "<group>"; };
+		3305742321EED8450026CCB2 /* ZegoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoHelper.swift; sourceTree = "<group>"; };
+		3305742E21EF0EC10026CCB2 /* OCBridgeToCpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBridgeToCpp.h; sourceTree = "<group>"; };
+		3305742F21EF0EC10026CCB2 /* OCBridgeToCpp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCBridgeToCpp.mm; sourceTree = "<group>"; };
+		3305743121EF0EE30026CCB2 /* ZegoSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZegoSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3305740621EECEA10026CCB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305742521EEE2140026CCB2 /* ZegoLiveRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3305740021EECEA10026CCB2 = {
+			isa = PBXGroup;
+			children = (
+				3305741E21EECF880026CCB2 /* libs */,
+				3305740B21EECEA10026CCB2 /* ZegoSwiftDemo */,
+				3305740A21EECEA10026CCB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3305740A21EECEA10026CCB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3305740921EECEA10026CCB2 /* ZegoSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3305740B21EECEA10026CCB2 /* ZegoSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3305742D21EF0EA90026CCB2 /* OCBridgeToCPP */,
+				3305740C21EECEA10026CCB2 /* AppDelegate.swift */,
+				3305740E21EECEA10026CCB2 /* ZegoAnchorViewController.swift */,
+				3305742321EED8450026CCB2 /* ZegoHelper.swift */,
+				3305742121EECFEB0026CCB2 /* ZegoKeyCenter.swift */,
+				3305741021EECEA10026CCB2 /* Main.storyboard */,
+				3305741321EECEA30026CCB2 /* Assets.xcassets */,
+				3305741521EECEA30026CCB2 /* LaunchScreen.storyboard */,
+				3305741821EECEA30026CCB2 /* Info.plist */,
+			);
+			path = ZegoSwiftDemo;
+			sourceTree = "<group>";
+		};
+		3305741E21EECF880026CCB2 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				3305741F21EECF880026CCB2 /* ZegoLiveRoom.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		3305742D21EF0EA90026CCB2 /* OCBridgeToCPP */ = {
+			isa = PBXGroup;
+			children = (
+				3305742E21EF0EC10026CCB2 /* OCBridgeToCpp.h */,
+				3305742F21EF0EC10026CCB2 /* OCBridgeToCpp.mm */,
+				3305743121EF0EE30026CCB2 /* ZegoSwiftDemo-Bridging-Header.h */,
+			);
+			path = OCBridgeToCPP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3305740821EECEA10026CCB2 /* ZegoSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3305741B21EECEA30026CCB2 /* Build configuration list for PBXNativeTarget "ZegoSwiftDemo" */;
+			buildPhases = (
+				3305740521EECEA10026CCB2 /* Sources */,
+				3305740621EECEA10026CCB2 /* Frameworks */,
+				3305740721EECEA10026CCB2 /* Resources */,
+				3305742721EEE2140026CCB2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZegoSwiftDemo;
+			productName = ZegoSwiftDemo;
+			productReference = 3305740921EECEA10026CCB2 /* ZegoSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3305740121EECEA10026CCB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zego;
+				TargetAttributes = {
+					3305740821EECEA10026CCB2 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 3305740421EECEA10026CCB2 /* Build configuration list for PBXProject "ZegoSwiftDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3305740021EECEA10026CCB2;
+			productRefGroup = 3305740A21EECEA10026CCB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3305740821EECEA10026CCB2 /* ZegoSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3305740721EECEA10026CCB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305741721EECEA30026CCB2 /* LaunchScreen.storyboard in Resources */,
+				3305741421EECEA30026CCB2 /* Assets.xcassets in Resources */,
+				3305741221EECEA10026CCB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3305740521EECEA10026CCB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3305743021EF0EC10026CCB2 /* OCBridgeToCpp.mm in Sources */,
+				3305742421EED8450026CCB2 /* ZegoHelper.swift in Sources */,
+				3305740F21EECEA10026CCB2 /* ZegoAnchorViewController.swift in Sources */,
+				3305740D21EECEA10026CCB2 /* AppDelegate.swift in Sources */,
+				3305742221EECFEB0026CCB2 /* ZegoKeyCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3305741021EECEA10026CCB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3305741121EECEA10026CCB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3305741521EECEA30026CCB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3305741621EECEA30026CCB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3305741921EECEA30026CCB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3305741A21EECEA30026CCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3305741C21EECEA30026CCB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WR2G89LR2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = ZegoSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zego.ZegoSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZegoSwiftDemo/OCBridgeToCPP/ZegoSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3305741D21EECEA30026CCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WR2G89LR2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = ZegoSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zego.ZegoSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZegoSwiftDemo/OCBridgeToCPP/ZegoSwiftDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3305740421EECEA10026CCB2 /* Build configuration list for PBXProject "ZegoSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305741921EECEA30026CCB2 /* Debug */,
+				3305741A21EECEA30026CCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3305741B21EECEA30026CCB2 /* Build configuration list for PBXNativeTarget "ZegoSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3305741C21EECEA30026CCB2 /* Debug */,
+				3305741D21EECEA30026CCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3305740121EECEA10026CCB2 /* Project object */;
+}
