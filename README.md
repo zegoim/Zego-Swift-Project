@@ -29,7 +29,7 @@ $ git lfs install
 # iOS编译报错请看：
 由于github无法上传超过100MB的大文件，iOS SDK文件使用git-lfs管理。这将导致直接download的项目的开发者在编译iOS项目时报错。
 
-**解决方式**：进入[SDK下载链接](https://storage.zego.im/downloads/ZegoLiveRoom-MediaPlayer-iOS.zip)，下载SDK后将项目中libs/ZegoLiveRoom-all/下的iphoneos、iphone_simulator两个文件夹内的framework替换为下载的SDK即可正常编译运行。
+**解决方式**：进入[SDK下载链接](https://storage.zego.im/downloads/ZegoLiveRoom-MediaPlayer-iOS.zip)，下载SDK后将项目中libs/内的framework替换为下载的SDK即可正常编译运行。
 
 # ZEGO Support
 Please visit [ZEGO Developer Center](https://www.zego.im/html/document/#Application_Scenes/Video_Live)
