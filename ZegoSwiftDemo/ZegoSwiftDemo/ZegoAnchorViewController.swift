@@ -15,6 +15,9 @@ class ZegoAnchorViewController: UIViewController {
         let user = ZegoHelper.user
         ZegoLiveRoomApi.setUserID(user.userId, userName: user.userName)
         
+        //打开测试环境
+        ZegoLiveRoomApi.setUseTestEnv(true)
+        
         guard let api = ZegoLiveRoomApi(appID: ZegoKeyCenter.appID, appSignature: ZegoKeyCenter.appKey) else {
             fatalError("ZegoLiveRoomApi init error")
         }
@@ -111,7 +114,7 @@ class ZegoAnchorViewController: UIViewController {
 }
 
 extension ZegoAnchorViewController : ZegoLivePublisherDelegate {
-    func onPublishStateUpdate(_ stateCode: Int32, streamID: String!, streamInfo info: [AnyHashable : Any]!) {
+    func onPublishStateUpdate(_ stateCode: Int32, streamID: String!, streamInfo info: [String : [String]]!) {
         let success: Bool = stateCode == 0
         isPublish = success
     }
